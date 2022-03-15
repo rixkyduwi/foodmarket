@@ -30,7 +30,7 @@
         android:textFontWeight="500"
         android:textColor="#020202"
         android:fontFamily="@font/poppins"
-        android:text="SahabatMarket"
+        android:text="UdinMarket"
         />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
