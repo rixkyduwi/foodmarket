@@ -3,7 +3,8 @@ package rizkydwisaputra.id.muslimcoder.makananpantura.model.response.login
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
 
-data class User {
+
+data class User(
     @Expose
     @SerializedName("address")
     val address: String,
@@ -12,30 +13,38 @@ data class User {
     val city: String,
     @Expose
     @SerializedName("created_at")
-    val created_at: String,
+    val created_at: Long,
     @Expose
     @SerializedName("current_team_id")
-    val current_team_id: String,
+    val current_team_id: Any,
     @Expose
     @SerializedName("email")
     val email: String,
     @Expose
     @SerializedName("email_verified_at")
-    val email_verified_at: String,
+    val email_verified_at: Any,
     @Expose
-    @SerializedName("profile_foto_path")
-    val profile_foto_path: String,
+    @SerializedName("houseNumber")
+    val houseNumber: String,
     @Expose
-    @SerializedName("profile_foto_url")
-    val profile_foto_url: String,
+    @SerializedName("id")
+    val id: Int,
     @Expose
-    @SerializedName("phonenumber")
-    val phonenumber: String,
+    @SerializedName("name")
+    val name: String,
     @Expose
-    @SerializedName("rule")
-    val rule: String,
+    @SerializedName("phoneNumber")
+    val phoneNumber: String,
     @Expose
-    @SerializedName("update")
-    val rule: String,
-
-}
+    @SerializedName("profile_photo_path")
+    val profile_photo_path: String,
+    @Expose
+    @SerializedName("profile_photo_url")
+    val profile_photo_url: String,
+    @Expose
+    @SerializedName("roles")
+    val roles: String,
+    @Expose
+    @SerializedName("updated_at")
+    val updated_at: Long
+    )

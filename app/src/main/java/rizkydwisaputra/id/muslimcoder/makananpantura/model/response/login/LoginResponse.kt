@@ -1,13 +1,14 @@
 package rizkydwisaputra.id.muslimcoder.makananpantura.model.response.login
-
-data class LoginResponse {
+import com.google.gson.annotations.Expose
+import com.google.gson.annotations.SerializedName
+data class LoginResponse(
     @Expose
-    @SerializedName("address")
-    val address: String,
+    @SerializedName("access_token")
+    val access_token: String,
     @Expose
-    @SerializedName("address")
-    val address: String,
+    @SerializedName("token_type")
+    val token_type: String,
     @Expose
-    @SerializedName("address")
-    val address: String,
-}
+    @SerializedName("user")
+    val user: User
+)
