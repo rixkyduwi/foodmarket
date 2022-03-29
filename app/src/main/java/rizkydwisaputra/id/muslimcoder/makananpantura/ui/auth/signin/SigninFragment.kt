@@ -32,7 +32,7 @@ class SigninFragment : Fragment(), SigninContract.View {
         }
         initDummy()
         initView()
-        btnSig.setOnClickListener {
+        btnSignup.setOnClickListener {
             val signup = Intent(activity, AuthActivity::class.java)
             signup.putExtra("page_request", 2)
             startActivity(signup)
