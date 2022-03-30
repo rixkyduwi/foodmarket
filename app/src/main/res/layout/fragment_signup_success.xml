@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.auth.signin.SigninFragment">
+    tools:context=".ui.auth.signup.SignupSuccessFragment">
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="200dp"
