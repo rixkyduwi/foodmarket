@@ -1,11 +1,19 @@
 package rizkydwisaputra.id.muslimcoder.makananpantura.ui.auth.signup
 
+import android.app.Dialog
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.Navigation
+import com.google.gson.Gson
+import kotlinx.android.synthetic.main.fragment_signup_address.*
+import rizkydwisaputra.id.muslimcoder.makananpantura.FoodMarket
 import rizkydwisaputra.id.muslimcoder.makananpantura.R
+import rizkydwisaputra.id.muslimcoder.makananpantura.model.request.RegisterRequest
+import rizkydwisaputra.id.muslimcoder.makananpantura.model.response.login.LoginResponse
+import rizkydwisaputra.id.muslimcoder.makananpantura.ui.auth.AuthActivity
 
 class SignupAddressFragment : Fragment(), SignupContract.View {
     private lateinit var data:RegisterRequest

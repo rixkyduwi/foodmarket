@@ -4,22 +4,22 @@ import com.google.firebase.crashlytics.buildtools.reloc.org.apache.http.client.H
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.schedulers.Schedulers
+class SigninPresenter (private val view:SigninContract.View) : SigninContract.Presenter {
 
-class SigninPresenter (private val view:SigninContract.View) :
-    SigninContract.Presenter {
     private val mCompositeDisposable : CompositeDisposable?
     init {
         this.mCompositeDisposable = CompositeDisposable()
     }
+
     override fun subimtLogin(email: String, password: String) {
         view.showLoading()
-        val disposable = HttpClient.getInstance().getApi()!!.login(email,
-            password)
+        val disposable = HttpClient.getInstance().getApi()!!.login(email, password)
             .subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
             .subscribe(
                 {
                     view.dismissLoading()
+
                     if (it.meta?.status.equals("success",true)){
                         it.data?.let { it1 -> view.onLoginSuccess(it1) }
                     } else {
@@ -33,9 +33,13 @@ class SigninPresenter (private val view:SigninContract.View) :
             )
         mCompositeDisposable!!.add(disposable)
     }
+
     override fun subscribe() {
+
     }
+
     override fun unSubscribe() {
         mCompositeDisposable!!.clear()
     }
+
 }

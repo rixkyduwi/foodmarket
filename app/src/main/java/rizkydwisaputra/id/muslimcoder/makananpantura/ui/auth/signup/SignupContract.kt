@@ -1,6 +1,9 @@
 package rizkydwisaputra.id.muslimcoder.makananpantura.ui.auth.signup
 
 import android.net.Uri
+import rizkydwisaputra.id.muslimcoder.makananpantura.base.BasePresenter
+import rizkydwisaputra.id.muslimcoder.makananpantura.base.BaseView
+import rizkydwisaputra.id.muslimcoder.makananpantura.model.request.RegisterRequest
 import rizkydwisaputra.id.muslimcoder.makananpantura.model.response.login.LoginResponse
 
 interface SignupContract {

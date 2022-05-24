@@ -20,7 +20,7 @@
         android:layout_marginTop="6dp"
         android:padding="10dp"
         style="@style/EditText.PoppinsNormal14sp8D92A3"
-        android:background="@drawable/greybtn"
+        android:background="@drawable/shape_rectangle_outline_8_020202"
         android:hint="Type your email address"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
@@ -35,7 +35,7 @@
         android:inputType="textPassword"
         android:padding="10dp"
         style="@style/EditText.PoppinsNormal14sp8D92A3"
-        android:background="@drawable/greybtn"
+        android:background="@drawable/shape_rectangle_outline_8_020202"
         android:hint="Type your password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
@@ -44,7 +44,7 @@
         android:text="Sign In"
         android:textAllCaps="false"
         android:layout_marginTop="24dp"
-        style="@style/Button.Primary"
+        android:background="@drawable/shape_rectangle_8_d3d3d3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 </LinearLayout>

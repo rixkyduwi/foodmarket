@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">makanan pantura</string>
+    <string name="Hello_Blank_fragment">Hello World</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Order</string>
+    <string name="title_notification">Profile</string>
+    <string name="ini_adalah_icon_ok">ini adalah icon ok</string>
+</resources>

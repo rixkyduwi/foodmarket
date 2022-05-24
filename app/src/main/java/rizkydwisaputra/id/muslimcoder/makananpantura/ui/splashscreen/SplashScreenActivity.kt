@@ -7,8 +7,9 @@ import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
 import rizkydwisaputra.id.muslimcoder.makananpantura.R
 import rizkydwisaputra.id.muslimcoder.makananpantura.ui.MainActivity
+import rizkydwisaputra.id.muslimcoder.makananpantura.ui.auth.AuthActivity
 
-class SplahScreenActivity : AppCompatActivity() {
+class SplashScreenActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.splash)
@@ -18,7 +19,7 @@ class SplahScreenActivity : AppCompatActivity() {
             WindowManager.LayoutParams.FLAG_FULLSCREEN
         )
         Handler().postDelayed({
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, AuthActivity::class.java)
             startActivity(intent)
             finish()
         }, 3000) // 3000 is the delayed time in milliseconds.

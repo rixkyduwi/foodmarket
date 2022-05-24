@@ -2,13 +2,17 @@ package rizkydwisaputra.id.muslimcoder.makananpantura.ui.auth.signup
 
 import android.net.Uri
 import android.view.View
+import com.google.firebase.crashlytics.buildtools.reloc.org.apache.http.client.HttpClient
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.schedulers.Schedulers
 import okhttp3.MediaType
 import okhttp3.MultipartBody
 import okhttp3.RequestBody
+import rizkydwisaputra.id.muslimcoder.makananpantura.model.request.RegisterRequest
 import java.io.File
+import java.util.Calendar.getInstance
+import javax.net.ssl.SSLContext.getInstance
 
 class SignupPresenter (private val view:SignupContract.View) :
     SignupContract.Presenter {

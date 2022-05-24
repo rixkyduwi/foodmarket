@@ -11,5 +11,4 @@ interface SigninContract {
 
     }
     interface Presenter: SigninContract ,BasePresenter
-
 }
