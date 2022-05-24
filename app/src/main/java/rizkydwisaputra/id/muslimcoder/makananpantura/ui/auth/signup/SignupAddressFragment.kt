@@ -2,10 +2,12 @@ package rizkydwisaputra.id.muslimcoder.makananpantura.ui.auth.signup
 
 import android.app.Dialog
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.navigation.Navigation
 import com.google.gson.Gson
 import kotlinx.android.synthetic.main.fragment_signup_address.*
